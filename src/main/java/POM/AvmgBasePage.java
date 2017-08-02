@@ -2,6 +2,7 @@ package POM;
 
 import POM.AdminPage.UsersListPage;
 import POM.AvmgRu.AvmgCuttingBandSawPage;
+import POM.AvmgRu.AvmgSearchPage;
 import POM.Login.AdminAvmgMainPage;
 import POM.classes.CareerAvmg;
 import POM.classes.PartnersAvmg;
@@ -20,10 +21,15 @@ import java.util.*;
  * Created by Дмитрий on 12.05.2017.
  */
 public class AvmgBasePage extends BasePage{
-    @FindBy(id = "av-auth-guest-bar")
+    @FindBy(id = "av-auth-title-search-bar")
     private WebElement entertButton;
 
+
+    @FindBy (id = "title-search")
+    private WebElement search;
+
     private boolean flag;
+
 
     public AvmgBasePage(String browser) {
         super(browser);
@@ -317,5 +323,39 @@ public class AvmgBasePage extends BasePage{
         textArea.sendKeys(careerAvmg.getMessage());
         type("click", By.cssSelector("input[name=\"web_form_submit\"]"), "");
         return this;
+    }
+
+
+    public AvmgBasePage search (String key, boolean enter){
+        search.click();
+        type("wait", By.id("title-search-input"), "");
+        type("write", By.id("title-search-input"), key);
+        if (enter) {
+            getDriver().findElement(By.id("title-search-input")).sendKeys(Keys.ENTER);
+            return new AvmgSearchPage(getDriver());
+        }
+        else if (isSearchResultListDisplayed()){
+            type("wait", By.className("av-search-title-result-list"), "");
+            this.setAttribute(getDriver(),getDriver().findElement(By.className("av-search-title-result-list")),
+                    "style", "display: block !important");
+            System.out.println(getDriver().findElement(By.className("av-search-title-result-list")).getText());
+        }
+            return this;
+    }
+
+    public boolean isSearchResultListDisplayed(){
+        return isElementDisplayed(By.className("av-search-title-result-list"));
+    }
+
+    public String returnTextFormSearchTitlrResultList(){
+        return getDriver().findElement(By.className("av-search-title-result-list")).getText();
+    }
+
+    public String getH1() {
+        return getDriver().findElement(By.tagName("h1")).getText();
+    }
+
+    public String getTitle() {
+        return getDriver().getTitle();
     }
 }

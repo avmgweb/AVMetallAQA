@@ -57,6 +57,7 @@ public class CareerAvmg {
     }
 
 
+
     public String getLink() {
         return link;
     }

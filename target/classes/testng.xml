@@ -2,166 +2,48 @@
 
 <suite  name="checkForms" verbose="10">
 
-    <test name="ChromeTestCareerRu"   >
+    <test name="ChromeTestCareerRu1">
         <parameter name = "browser" value="chrome" />
-        <parameter name = "url" value="https://ru.avmg.com.ua/career/menedzher-po-prodazham+lvov/"/>
-        <parameter name = "urlMain" value="https://ru.avmg.com.ua"/>
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="false"/>
+        <parameter name = "key1" value="ddddddddddd"/>
+        <parameter name = "key2" value="АВ"/>
         <classes>
-            <class name="checkForm.checkFormCareer" />
-        </classes>
-
-    </test>
-    <test name="ChromeTestMainRu" >
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="common"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
+            <class name="checkSearch.checkSearch" />
         </classes>
     </test>
 
-    <test name="ChromeTestContactRu" >
+    <test name="ChromeTestCareerRu2">
         <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="common"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/contacts/"/>
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="false"/>
+        <parameter name = "key1" value="ddddddddddd"/>
+        <parameter name = "key2" value="АВ"/>
         <classes>
-            <class name="checkForm.checkFormBase" />
+            <class name="checkSearch.checkSearch" />
         </classes>
     </test>
 
-    <test name="ChromeTestGazovayaRezkaMetallaRu">
+    <test name="ChromeTestCareerRu3">
         <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/uslugi/gazovaya-rezka-metalla/"/>
+        <parameter name = "language" value="ru"/>
+        <parameter name = "correctness" value="true"/>
+        <parameter name = "key1" value="Металл"/>
+        <parameter name = "key2" value="АВ"/>
         <classes>
-            <class name="checkForm.checkFormBase" />
+            <class name="checkSearch.checkSearch" />
         </classes>
     </test>
 
-    <test name="ChromeTestPlazmennayaRezkaMetallaRu">
+    <test name="ChromeTestCareerRu4">
         <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/uslugi/plazmennaya-rezka-metalla/"/>
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="true"/>
+        <parameter name = "key1" value="Метал"/>
+        <parameter name = "key2" value="АВ"/>
         <classes>
-            <class name="checkForm.checkFormBase" />
+            <class name="checkSearch.checkSearch" />
         </classes>
     </test>
-
-    <test name="ChromeTestRezkaNaLentopilnomStankeRu">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/uslugi/rezka-na-lentopilnom-stanke/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestProdolnayaRezkaMetallaRu">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/uslugi/prodolnaya-rezka-metalla/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestDostavkaRu">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua/uslugi/dostavka/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestPartnersavmgRu">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "url" value="https://ru.avmg.com.ua/about/partnersavmg/"/>
-        <classes>
-            <class name="checkForm.checkFormPartners" />
-        </classes>
-    </test>
-
-
-    <test name="ChromeTestCareerUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "url" value="https://avmg.com.ua/career/menedzher-po-prodazham+lvov/"/>
-        <parameter name = "urlMain" value="https://avmg.com.ua"/>
-        <classes>
-            <class name="checkForm.checkFormCareer" />
-        </classes>
-
-    </test>
-    <test name="ChromeTestMainUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="common"/>
-        <parameter name = "url" value="https://avmg.com.ua/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestContactUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="common"/>
-        <parameter name = "url" value="https://avmg.com.ua/contacts/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestGazovayaRezkaMetallaUa" >
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://avmg.com.ua/uslugi/gazovaya-rezka-metalla/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestPlazmennayaRezkaMetallaUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://avmg.com.ua/uslugi/plazmennaya-rezka-metalla/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestRezkaNaLentopilnomStankeUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://avmg.com.ua/uslugi/rezka-na-lentopilnom-stanke/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestProdolnayaRezkaMetallaUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://avmg.com.ua/uslugi/prodolnaya-rezka-metalla/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestDostavkaUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="services"/>
-        <parameter name = "url" value="https://avmg.com.ua/uslugi/gruzoperevozka/"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
-
-    <test name="ChromeTestPartnersavmgUa">
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "url" value="https://avmg.com.ua/about/partnersavmg/"/>
-        <classes>
-            <class name="checkForm.checkFormPartners" />
-        </classes>
-    </test>
-
 
 </suite>

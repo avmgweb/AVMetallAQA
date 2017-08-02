@@ -1,4 +1,5 @@
 checkForm\checkFormBase.class
+checkSearch\checkSearch.class
 checkMetalwarehouses.class
 checkAutentification.class
 checkForm\checkFormPartners.class

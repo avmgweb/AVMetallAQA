@@ -53,16 +53,16 @@ public class checkFormBase extends BaseTest {
         adminAvmgResultsFormPage = adminAvmgSettingsFormPage.goToResultsFormPage(idForm);
         adminAvmgResultsFormPage.sortingDown();
         requestAvmgAdmin = adminAvmgResultsFormPage.getRequest(requestAvmg.getName(), type, selector );
-        Assert.assertTrue(requestAvmg.getName().equals(requestAvmgAdmin.getName()));
-        Assert.assertTrue(requestAvmg.getSurname().equals(requestAvmgAdmin.getSurname()));
-        Assert.assertTrue(requestAvmg.getMail().equals(requestAvmgAdmin.getMail()));
-        Assert.assertTrue(requestAvmgAdmin.getTelephone().contains(requestAvmg.getTelephone()));
-        Assert.assertTrue(requestAvmg.getCompany().equals(requestAvmgAdmin.getCompany()));
-        Assert.assertTrue(requestAvmg.getMessage().equals(requestAvmgAdmin.getMessage()));
+        Assert.assertEquals(requestAvmg.getName(), requestAvmgAdmin.getName());
+        Assert.assertEquals(requestAvmg.getSurname(), requestAvmgAdmin.getSurname());
+        Assert.assertEquals(requestAvmg.getMail(), requestAvmgAdmin.getMail());
+        Assert.assertEquals(requestAvmgAdmin.getTelephone(), requestAvmg.getTelephone());
+        Assert.assertEquals(requestAvmg.getCompany(), requestAvmgAdmin.getCompany());
+        Assert.assertEquals(requestAvmg.getMessage(), requestAvmgAdmin.getMessage());
         System.out.println(requestAvmg.getTown());
         System.out.println(requestAvmgAdmin.getTown());
         if (type.equals("common"))
-            Assert.assertTrue(requestAvmg.getTown().equals(requestAvmgAdmin.getTown()));
+            Assert.assertEquals(requestAvmg.getTown(), requestAvmgAdmin.getTown());
     }
 
     @Test(dependsOnMethods = {"checkOrderPriceListFormAdmin"})

@@ -1,11 +1,7 @@
 package POM;
 
-import POM.BasePage;
-import POM.classes.CareerAvmg;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.util.Map;
 
 /**
  * Created by Дмитрий on 16.05.2017.

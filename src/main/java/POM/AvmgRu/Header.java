@@ -1,7 +1,9 @@
 package POM.AvmgRu;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
@@ -10,6 +12,8 @@ import java.util.List;
  */
 public class Header {
 
+    private WebDriver driver;
+
     @FindBy(xpath = "img[title=\"АВ металл групп\"]")
     private List<WebElement> logo;
 
@@ -17,4 +21,8 @@ public class Header {
     private WebElement aboutUs;
 
 
+    public Header(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver,this);
+    }
 }

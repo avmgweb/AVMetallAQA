@@ -1,13 +1,11 @@
 package driver;
 
-import com.sun.javafx.collections.MappingChange;
 import logger.WebEventListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -26,13 +24,13 @@ public class Driver {
     private static WebDriver driver;
 
     public static WebDriver getInstance(String browser) {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-        System.setProperty("phantomjs.binary.path", "src/main/resources/phantomjs.exe");
-        System.setProperty("webdriver.opera.driver", "src/main/resources/operadriver.exe");
-        System.setProperty("webdriver.ie.driver", "src/main/resources/IEDriverServer.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "src/main/resources/drivers/geckodriver.exe");
+        System.setProperty("phantomjs.binary.path", "src/main/resources/drivers/phantomjs.exe");
+        System.setProperty("webdriver.opera.driver", "src/main/resources/drivers/operadriver.exe");
+        System.setProperty("webdriver.ie.driver", "src/main/resources/drivers/IEDriverServer.exe");
 
-        String downloadFilepath = "C:\\Users\\Дмитрий\\Documents\\AQA\\AVMetall\\src\\main\\folderForCareer";
+        String downloadFilepath = "C:\\Users\\Дмитрий\\Documents\\AQA\\AVMetallAQA\\src\\main\\folderForCareer";
         Map<String, Object> preferences = new Hashtable<String, Object>();
         preferences.put("profile.default_content_settings.popups", 0);
         preferences.put("download.prompt_for_download", "false");
@@ -74,12 +72,12 @@ public class Driver {
                     break;
                 default: driver = new ChromeDriver(capabilities);
             }
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(75, TimeUnit.SECONDS);
             EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
             return eventDriver.register(new WebEventListener());
         }
-        driver.manage().window().maximize();
+        maximize();
         return driver;
     }
 

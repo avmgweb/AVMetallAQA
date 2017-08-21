@@ -4,7 +4,7 @@ import BaseTest.BaseTest;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import POM.AvmgBasePage;
-import POM.classes.CareerAvmg;
+import classes.CareerAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -23,7 +23,7 @@ import static files.FileAV.*;
 public class checkFormCareer extends BaseTest {
 
     String login = "awe5040";
-    String password = "qwerty5040";
+    String password = "Qwerty5040+";
     CareerAvmg careerAvmg;
     CareerAvmg careerAvmgAdmin;
     String idForm;
@@ -39,7 +39,7 @@ public class checkFormCareer extends BaseTest {
     public void  checkCareerForm(String url, String urlMain) throws InterruptedException, IOException {
         careerAvmg = CareerAvmg.generate();
         careerAvmg.setLink(url);
-        fileCareer = createFile(careerAvmg.getFileName());
+        fileCareer = createFile(careerAvmg.getFileName(), "career");
         writeToFile(fileCareer, careerAvmg.getResume());
         careerAvmg.setFile(fileCareer.getAbsolutePath());
         avmgBasePage = avmgMainPage.goToUrlFormBasePage(url);
@@ -61,7 +61,7 @@ public class checkFormCareer extends BaseTest {
         adminAvmgSettingsFormPage.setFilterById(idForm);
         adminAvmgResultsFormPage = adminAvmgSettingsFormPage.goToResultsFormPage(idForm);
         adminAvmgResultsFormPage.sortingDown();
-        careerAvmgAdmin = adminAvmgResultsFormPage.getRequestCareer(careerAvmg.getMail(),  selector );
+        careerAvmgAdmin = adminAvmgResultsFormPage.getRequestCareer(careerAvmg.getMail(),  selector);
         Assert.assertTrue(careerAvmgAdmin.getLink().replace(" ","+").equals(careerAvmg.getLink()));
         Assert.assertTrue(careerAvmgAdmin.getMessage().equals(careerAvmg.getMessage()));
         Assert.assertTrue(careerAvmgAdmin.getMail().equals(careerAvmg.getMail()));

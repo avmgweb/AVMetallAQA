@@ -5,7 +5,7 @@ import POM.AdminBasePage;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import POM.AvmgBasePage;
-import POM.classes.PartnersAvmg;
+import classes.PartnersAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -19,7 +19,7 @@ import java.util.Map;
  */
 public class checkFormPartners extends BaseTest {
     String login = "awe5040";
-    String password = "qwerty5040";
+    String password = "Qwerty5040+";
     String idForm;
     AdminAvmgSettingsFormPage adminAvmgSettingsFormPage;
     AdminAvmgResultsFormPage adminAvmgResultsFormPage;

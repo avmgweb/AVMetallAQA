@@ -53,7 +53,7 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 7)
     public void checkMetalwarehousesZakarpatieRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("zakarpatie-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 7, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 6, "Error");
     }
 
     @Test (priority = 8)
@@ -71,13 +71,13 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 10)
     public void checkMetalwarehousesKievRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("kiev-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 33, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 32, "Error");
     }
 
     @Test (priority = 11)
     public void checkMetalwarehousesKirovogradRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("kirovograd-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 5, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 4, "Error");
     }
 
     @Test (priority = 12)
@@ -89,19 +89,19 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 13)
     public void checkMetalwarehousesLvovRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("lvov-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 25, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 24, "Error");
     }
 
     @Test (priority = 14)
     public void checkMetalwarehousesNikolaevRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("nikolaev-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 8, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 7, "Error");
     }
 
     @Test (priority = 15)
     public void checkMetalwarehousesOdessaRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("odessa-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 16, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 15, "Error");
     }
 
     @Test (priority = 16)
@@ -113,7 +113,7 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 17)
     public void checkMetalwarehousesRovnoRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("rovno-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 9, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 8, "Error");
     }
 
     @Test (priority = 18)
@@ -131,7 +131,7 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 20)
     public void checkMetalwarehousesKharkovRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("kharkov-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 23, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 22, "Error");
     }
 
     @Test (priority = 21)
@@ -143,19 +143,19 @@ public class checkMetalwarehouses extends BaseTest {
     @Test (priority = 22)
     public void checkMetalwarehousesKhmelnitskRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("khmelnitsk-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 18, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 17, "Error");
     }
 
     @Test (priority = 23)
     public void checkMetalwarehousesCherkassyRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("cherkassy-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 15, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 14, "Error");
     }
 
     @Test (priority = 24)
     public void checkMetalwarehousesChernigovRegion() throws InterruptedException {
         avmgMetalwarehousesRegionPage1 = avmgMetalwarehousesPage.goToRegion("chernigov-obl");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 6, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage1.countMetalwarehouses() == 7, "Error");
     }
 
     @Test (enabled = false)

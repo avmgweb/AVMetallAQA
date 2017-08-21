@@ -1,13 +1,11 @@
 package BaseTest;
 
 import POM.AvmgRu.AvmgMainPage;
-import POM.Login.AdminAvmgMainPage;
+import POM.AdminPage.AdminAvmgMainPage;
 import driver.Driver;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 
 /**
  * Created by Дмитрий on 03.05.2017.
@@ -31,5 +29,9 @@ public abstract class BaseTest {
         Driver.nullDriver();
     }
 
-
+    @AfterMethod
+    public void takeSkreenshots(ITestResult result){
+        System.out.println(result.getStatus());
+        System.out.println(result.getName());
+    }
 }

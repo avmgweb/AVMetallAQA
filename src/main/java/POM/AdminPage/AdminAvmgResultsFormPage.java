@@ -1,9 +1,9 @@
 package POM.AdminPage;
 
 import POM.AdminBasePage;
-import POM.classes.CareerAvmg;
-import POM.classes.PartnersAvmg;
-import POM.classes.RequestAvmg;
+import classes.CareerAvmg;
+import classes.PartnersAvmg;
+import classes.RequestAvmg;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,10 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import selector.selectors;
 import org.openqa.selenium.Point;
-import java.awt.*;
-import java.awt.event.KeyEvent;
+
 import java.util.List;
 import java.util.Map;
 
@@ -97,7 +95,6 @@ public class AdminAvmgResultsFormPage extends AdminBasePage {
     }
 
     public boolean deletePrice(String name) throws InterruptedException {
-        RequestAvmg requestAvmg = new RequestAvmg();
         Boolean flag = false;
         List<WebElement> requests = getDriver().findElements(By.xpath("//tr[@class=\"adm-list-table-row\"]"));
         for (WebElement request : requests) {
@@ -124,7 +121,7 @@ public class AdminAvmgResultsFormPage extends AdminBasePage {
             return false;
         flag = false;
         getDriver().navigate().refresh();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         requests = getDriver().findElements(By.xpath("//tr[@class=\"adm-list-table-row\"]"));
         for (WebElement request : requests) {
             List<WebElement> requestsFields = request.findElements(By.tagName("td"));

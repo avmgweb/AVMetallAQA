@@ -9,6 +9,7 @@ import POM.AvmgRu.AvmgSearchPage;
 import POM.AvmgUa.AvmgMainPageUa;
 import driver.Driver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 /**
@@ -81,6 +82,11 @@ public class checkSearch{
         }
     }
 
+    @AfterMethod
+    public void takeSkreenshots(ITestResult result){
+        System.out.println(result.getStatus());
+        System.out.println(result.getName());
+    }
 
     @AfterClass
     public void tearDown() {

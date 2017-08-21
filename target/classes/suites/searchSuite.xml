@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteSearch"  >
+
+
+    <test name="ChromeTestSearchRu1">
+        <parameter name = "browser" value="chrome" />
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="false"/>
+        <parameter name = "key1" value="ddddddddddd"/>
+        <parameter name = "key2" value="АВ"/>
+        <classes>
+            <class name="checkSearch.checkSearch" />
+        </classes>
+    </test>
+
+    <test name="ChromeTestSearchRu2">
+        <parameter name = "browser" value="chrome" />
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="false"/>
+        <parameter name = "key1" value="ddddddddddd"/>
+        <parameter name = "key2" value="АВ"/>
+        <classes>
+            <class name="checkSearch.checkSearch" />
+        </classes>
+    </test>
+
+    <test name="ChromeTestSearchRu3">
+        <parameter name = "browser" value="chrome" />
+        <parameter name = "language" value="ru"/>
+        <parameter name = "correctness" value="true"/>
+        <parameter name = "key1" value="Металл"/>
+        <parameter name = "key2" value="АВ"/>
+        <classes>
+            <class name="checkSearch.checkSearch" />
+        </classes>
+    </test>
+
+    <test name="ChromeTestSearchRu4">
+        <parameter name = "browser" value="chrome" />
+        <parameter name = "language" value="ua"/>
+        <parameter name = "correctness" value="true"/>
+        <parameter name = "key1" value="Метал"/>
+        <parameter name = "key2" value="АВ"/>
+        <classes>
+            <class name="checkSearch.checkSearch" />
+        </classes>
+    </test>
+
+
+
+</suite>

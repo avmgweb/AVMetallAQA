@@ -1,7 +1,7 @@
 import BaseTest.BaseTest;
 import POM.AdminPage.UsersListPage;
-import POM.classes.UserAvmg;
-import mail.CheckingMails;
+import classes.UserAvmg;
+import mail.Mails;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -35,11 +35,11 @@ public class checkRegistration extends BaseTest {
 
     @Test(priority = 1)
     public void checkRegistration() throws InterruptedException {
-        CheckingMails.deleteAllMail(host, mailStoreType, loginGm, passwordGm);
+        Mails.deleteAllMail(host, mailStoreType, loginGm, passwordGm);
         userAvmg = new UserAvmg(loginAvmg, passwordAvmg, passwordConfirmation, mail, name, surname, mobile);
         avmgMainPage.callFormMenu().goToRegistrationTab().fillRegistrationForm(userAvmg);
-        CheckingMails.waitMail(host, mailStoreType, loginGm, passwordGm);
-        avmgMainPage.goToUrl(CheckingMails.confirmMail(host, mailStoreType, loginGm, passwordGm, maskRegistration1, maskRegistration2));
+        Mails.waitMail(host, mailStoreType, loginGm, passwordGm);
+        avmgMainPage.goToUrl(Mails.confirmMail(host, mailStoreType, loginGm, passwordGm, maskRegistration1, maskRegistration2));
         Assert.assertTrue(avmgMainPage.isElementDisplayed(By.xpath("//*[text()=\"Учетная запись успешно активирована!\"]")));
     }
 
@@ -53,10 +53,10 @@ public class checkRegistration extends BaseTest {
 
     @Test(priority = 3)
     public void changePassword() throws InterruptedException {
-        CheckingMails.deleteAllMail(host, mailStoreType, loginGm, passwordGm);
+        Mails.deleteAllMail(host, mailStoreType, loginGm, passwordGm);
         avmgMainPage.callFormMenu().sendMessageForgetPassword(mail);
-        CheckingMails.waitMail(host, mailStoreType, loginGm, passwordGm);
-        avmgMainPage.goToUrl(CheckingMails.confirmMail(host, mailStoreType, loginGm, passwordGm, maskForgetPass1, maskForgetPass2));
+        Mails.waitMail(host, mailStoreType, loginGm, passwordGm);
+        avmgMainPage.goToUrl(Mails.confirmMail(host, mailStoreType, loginGm, passwordGm, maskForgetPass1, maskForgetPass2));
         Assert.assertTrue(avmgMainPage.checkForgetPasswordPage());
         avmgMainPage.changePassword(newPasswordAvmg, newPasswordAvmgCongirmation);
         avmgMainPage.closeFormMenu();

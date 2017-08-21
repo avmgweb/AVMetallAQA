@@ -22,6 +22,8 @@ public class AdminAvmgSettingsFormPage extends AdminBasePage {
             type("click", By.className("adm-filter-add-button"), "");
             type("click", By.xpath("//*[@class = \"bx-core-popup-menu-item-text\" and contains(text(), 'ID формы') ]"), "");
         }
+        if (isElementDisplayed(By.cssSelector("input[name=\"close\"]")))
+            type("click", By.cssSelector("input[name=\"close\"]"), "");
         type("write", By.cssSelector("input[name=\"find_id\"]"), idForm);
         type("click", By.cssSelector("input[name=\"set_filter\"]"), "");
         return new AdminAvmgSettingsFormPage(getDriver());
@@ -33,4 +35,3 @@ public class AdminAvmgSettingsFormPage extends AdminBasePage {
         return new AdminAvmgResultsFormPage(getDriver());
     }
 }
-//https://avmg.com.ua/bitrix/admin/form_result_list.php?lang=ru&WEB_FORM_ID=12

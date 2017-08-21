@@ -5,7 +5,7 @@ import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import selector.selectors;
 import POM.AvmgBasePage;
-import POM.classes.RequestAvmg;
+import classes.RequestAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -19,7 +19,7 @@ import java.util.Map;
 public class checkFormBase extends BaseTest {
 
     String login = "awe5040";
-    String password = "qwerty5040";
+    String password = "Qwerty5040+";
     RequestAvmg requestAvmg;
     RequestAvmg requestAvmgAdmin;
     String idForm;
@@ -56,7 +56,7 @@ public class checkFormBase extends BaseTest {
         Assert.assertEquals(requestAvmg.getName(), requestAvmgAdmin.getName());
         Assert.assertEquals(requestAvmg.getSurname(), requestAvmgAdmin.getSurname());
         Assert.assertEquals(requestAvmg.getMail(), requestAvmgAdmin.getMail());
-        Assert.assertEquals(requestAvmgAdmin.getTelephone(), requestAvmg.getTelephone());
+        Assert.assertTrue(requestAvmgAdmin.getTelephone().contains(requestAvmg.getTelephone()));
         Assert.assertEquals(requestAvmg.getCompany(), requestAvmgAdmin.getCompany());
         Assert.assertEquals(requestAvmg.getMessage(), requestAvmgAdmin.getMessage());
         System.out.println(requestAvmg.getTown());

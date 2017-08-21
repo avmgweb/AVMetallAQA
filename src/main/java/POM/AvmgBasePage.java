@@ -1,18 +1,18 @@
 package POM;
 
 import POM.AdminPage.UsersListPage;
-import POM.AvmgRu.AvmgCuttingBandSawPage;
 import POM.AvmgRu.AvmgSearchPage;
-import POM.Login.AdminAvmgMainPage;
-import POM.classes.CareerAvmg;
-import POM.classes.PartnersAvmg;
-import POM.classes.RequestAvmg;
-import POM.classes.UserAvmg;
+import POM.AdminPage.AdminAvmgMainPage;
+import POM.AvmgRu.Header;
+import classes.CareerAvmg;
+import classes.PartnersAvmg;
+import classes.RequestAvmg;
+import classes.UserAvmg;
+import files.FileAV;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import selector.selectors;
 
 import java.io.File;
 import java.util.*;
@@ -21,7 +21,7 @@ import java.util.*;
  * Created by Дмитрий on 12.05.2017.
  */
 public class AvmgBasePage extends BasePage{
-    @FindBy(id = "av-auth-title-search-bar")
+    @FindBy(id = "av-auth-guest-bar")
     private WebElement entertButton;
 
 
@@ -222,11 +222,18 @@ public class AvmgBasePage extends BasePage{
     }
 
 
-    public List<String> getAllLinks() {
-        List<String> hrefs = new ArrayList<String>();
-        List<WebElement> links = getDriver().findElements(By.tagName("a"));
-        for (WebElement link : links) {
-            hrefs.add(link.getAttribute("href"));
+    public Set<String> getAllLinks(String language) {
+        Set<String> hrefs = null;
+        switch (language){
+            case ("ru") :
+                hrefs = FileAV.readLinksFile("C:\\Users\\Дмитрий\\Documents\\AQA\\AVMetallAQA\\src\\main\\links\\LinksRu.txt");
+                break;
+            case ("ua") :
+                hrefs = FileAV.readLinksFile("C:\\Users\\Дмитрий\\Documents\\AQA\\AVMetallAQA\\src\\main\\links\\LinksUa.txt");
+                break;
+            default :
+                System.out.println("Error");
+                break;
         }
         return hrefs;
     }
@@ -357,5 +364,17 @@ public class AvmgBasePage extends BasePage{
 
     public String getTitle() {
         return getDriver().getTitle();
+    }
+
+    public Header navigationHeader(){
+        return new Header(getDriver());
+    }
+
+    public String get404Page(String lang) {
+        switch (lang){
+            case "ua" : return "https://avmg.com.ua/404";
+            case "ru" : return "https://ru.avmg.com.ua/404";
+        }
+        return "Error";
     }
 }

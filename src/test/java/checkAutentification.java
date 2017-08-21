@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
  */
 public class checkAutentification extends BaseTest {
     String login = "awe5040";
-    String password = "qwerty5040";
+    String password = "Qwerty5040+";
     String loginFb = "avmg5040@gmail.com";
     String passwordFB = "Finave5040";
     String loginGm = "avmg5040@gmail.com";

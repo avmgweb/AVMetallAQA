@@ -1,6 +1,6 @@
 import BaseTest.BaseTest;
 import POM.AdminPage.UsersListPage;
-import classes.UserAvmg;
+import models.UserAvmg;
 import mail.Mails;
 import org.openqa.selenium.By;
 import org.testng.Assert;

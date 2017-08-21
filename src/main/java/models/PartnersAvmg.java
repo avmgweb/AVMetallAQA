@@ -1,10 +1,10 @@
-package classes;
+package models;
 
 /**
  * Created by Дмитрий on 18.07.2017.
  */
 
-import static classes.FunctionBase.*;
+import static models.FunctionBase.*;
 
 public class PartnersAvmg {
     private String companyName;

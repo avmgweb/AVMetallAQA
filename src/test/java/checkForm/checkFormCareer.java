@@ -4,7 +4,7 @@ import BaseTest.BaseTest;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import POM.AvmgBasePage;
-import classes.CareerAvmg;
+import models.CareerAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;

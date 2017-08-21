@@ -1,11 +1,14 @@
 package POM;
 
 import driver.Driver;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -105,6 +108,12 @@ public class BasePage {
     public void setAttribute(WebDriver driver, WebElement element, String attributeName, String value) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, attributeName, value);
+    }
+
+    public void takeScreenshot(String name) throws IOException {
+        String path = "src/main/java/screenshots/" + name +".jpg";
+        File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File(path));
     }
 
 }

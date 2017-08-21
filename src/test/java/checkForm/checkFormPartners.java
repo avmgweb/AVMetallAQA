@@ -5,7 +5,7 @@ import POM.AdminBasePage;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import POM.AvmgBasePage;
-import classes.PartnersAvmg;
+import models.PartnersAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;

@@ -1,8 +1,8 @@
-package classes;
+package models;
 
 
 
-import static classes.FunctionBase.*;
+import static models.FunctionBase.*;
 
 /**
  * Created by Дмитрий on 26.06.2017.

@@ -8,9 +8,14 @@ import POM.AvmgRu.AvmgMainPage;
 import POM.AvmgRu.AvmgSearchPage;
 import POM.AvmgUa.AvmgMainPageUa;
 import driver.Driver;
+import mail.Mails;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
+import java.io.IOException;
+
+import static files.FileAV.deleteAllFilesFromFolder;
 
 /**
  * Created by Дмитрий on 28.07.2017.
@@ -20,7 +25,9 @@ public class checkSearch{
     AdminAvmgResultsFormPage adminAvmgResultsFormPage;
     AvmgBasePage avmgMainPage;
     AvmgSearchPage avmgSearchPage;
-
+    String loginGm = "avmg5040@gmail.com";
+    String passwordGm = "Finave5040";
+    String recipient = "awesome5040@gmail.com";
 
     @BeforeClass
     @Parameters({"browser", "language"})
@@ -83,9 +90,7 @@ public class checkSearch{
     }
 
     @AfterMethod
-    public void takeSkreenshots(ITestResult result){
-        System.out.println(result.getStatus());
-        System.out.println(result.getName());
+    public void takeSkreenshots(ITestResult result) throws IOException {
     }
 
     @AfterClass

@@ -1,9 +1,9 @@
 package POM.AdminPage;
 
 import POM.AdminBasePage;
-import classes.CareerAvmg;
-import classes.PartnersAvmg;
-import classes.RequestAvmg;
+import models.CareerAvmg;
+import models.PartnersAvmg;
+import models.RequestAvmg;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,7 +1,7 @@
-package classes;
+package models;
 
-import static classes.FunctionBase.*;
-import static classes.FunctionBase.generateRandomChars;
+import static models.FunctionBase.*;
+import static models.FunctionBase.generateRandomChars;
 
 /**
  * Created by Дмитрий on 24.07.2017.

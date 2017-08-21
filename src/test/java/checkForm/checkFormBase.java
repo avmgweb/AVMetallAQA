@@ -5,7 +5,7 @@ import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import selector.selectors;
 import POM.AvmgBasePage;
-import classes.RequestAvmg;
+import models.RequestAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;

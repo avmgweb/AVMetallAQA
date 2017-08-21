@@ -22,18 +22,16 @@ public class checkAllLinks extends BaseTest {
     Set<String> linksUrl;
     String linkUrl;
     List<String> linkUrl404 = new ArrayList<>();
-    String loginGm = "avmg5040@gmail.com";
-    String passwordGm = "Finave5040";
-    String recipient = "awesome5040@gmail.com";
 
-    @Test(priority = 1)
+
+    @Test(enabled = false)
     public void  linksTestRu() throws IOException {
         FileAV.resetFile("src/main/links/Links404.txt");
         linksUrl = avmgMainPage.getAllLinks("ru");
         Assert.assertTrue(verifyLinkActive(linksUrl));
     }
 
-    @Test(priority = 2)
+    @Test(enabled = false)
     public void linksTestUa() throws IOException {
         linksUrl = avmgMainPage.getAllLinks("ua");
         boolean flag = verifyLinkActive(linksUrl);

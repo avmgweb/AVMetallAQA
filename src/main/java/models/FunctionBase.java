@@ -1,4 +1,4 @@
-package classes;
+package models;
 
 import java.util.Arrays;
 import java.util.Random;

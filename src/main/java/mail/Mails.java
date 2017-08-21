@@ -2,10 +2,17 @@ package mail;
 
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
+import java.util.Set;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 public class Mails {
     public static String check(String host, String storeType, String user, String password) {
@@ -170,5 +177,60 @@ public class Mails {
         }catch (MessagingException mex) {
             mex.printStackTrace();
         }
+    }
+
+    public static void sendScreenshot(String user, String password, String recipient, Set<String> screenshots, String test) {
+        Properties props = new Properties();
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.port", "465");
+        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        Session session = Session.getInstance(props,
+                new javax.mail.Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(user, password);
+                    }
+                });
+        try {
+
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(user));
+            message.setRecipients(Message.RecipientType.TO,
+                    InternetAddress.parse(recipient));
+            message.setSubject("Testing Subject");
+            MimeMultipart multipart = new MimeMultipart("related");
+            BodyPart messageBodyPart = new MimeBodyPart();
+            String htmlText = "<H1>Screenshots " + test + "</H1><img src=\"cid:image\">";
+            messageBodyPart.setContent(htmlText, "text/html");
+            multipart.addBodyPart(messageBodyPart);
+            for(String screenshot : screenshots) {
+                imgUpload(multipart, screenshot);
+            }
+            message.setContent(multipart);
+            Transport.send(message);
+
+            System.out.println("Sent message successfully....");
+
+        } catch (MessagingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void imgUpload(Multipart multipart, String fileName) throws MessagingException
+    {
+        BodyPart messageBodyPart = new MimeBodyPart();
+        messageBodyPart = new MimeBodyPart();
+        DataSource fds = new FileDataSource(fileName);
+        messageBodyPart.setDataHandler(new DataHandler(fds));
+        messageBodyPart.setFileName(getNameFromPath(fileName));
+        multipart.addBodyPart(messageBodyPart);
+    }
+
+
+    public static String getNameFromPath(String path){
+        return path.replace("src\\main\\java\\screenshots\\"  ,"").
+                    replace(".jpg","");
+
     }
 }

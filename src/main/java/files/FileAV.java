@@ -1,5 +1,7 @@
 package files;
 
+import org.apache.xpath.SourceTree;
+
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -125,4 +127,24 @@ public class FileAV {
             try {writer.close();} catch (Exception ex) {/*ignore*/}
         }
     }
+
+    public static void deleteAllFilesFromFolder(String folderPath) {
+        File[] files = new File(folderPath).listFiles();
+        for (File f : files){
+            f.delete();
+        }
+    }
+
+    public static HashSet<String> getAllFilesFromFolder(String folderPath) {
+        HashSet<String> listOfFiles = new HashSet <String>();
+        File[] files = new File(folderPath).listFiles();
+        if (files.length == 0)
+            return null;
+        for (File f : files){
+            listOfFiles.add(f.getPath());
+        }
+        System.out.println(files.length);
+        return listOfFiles;
+    }
+
 }

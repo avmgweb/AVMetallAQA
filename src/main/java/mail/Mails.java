@@ -220,7 +220,6 @@ public class Mails {
     public static void imgUpload(Multipart multipart, String fileName) throws MessagingException
     {
         BodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart = new MimeBodyPart();
         DataSource fds = new FileDataSource(fileName);
         messageBodyPart.setDataHandler(new DataHandler(fds));
         messageBodyPart.setFileName(getNameFromPath(fileName));

@@ -25,7 +25,8 @@ public class AdminAvmgMainPage extends AdminBasePage {
         if (isElementDisplayed(By.cssSelector("input[name=\"close\"]")))
             type("click", By.cssSelector("input[name=\"close\"]"), "");
 
-        if (getDriver().findElement(By.className("adm-header-language")).getText().equals("UA")){
+        if (getDriver().findElement(By.className("adm-header-language")).getText().equals("UA") ||
+                getDriver().findElement(By.className("adm-header-language")).getText().equals("EN")){
             type("click", By.className("adm-header-language"), "");
             type("click", By.xpath("//*[text()=\"(ru) Russian\"]"), "");
         }

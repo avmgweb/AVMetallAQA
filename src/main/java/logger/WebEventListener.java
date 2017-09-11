@@ -28,7 +28,6 @@ public class WebEventListener implements WebDriverEventListener {
 
     @Override
     public void afterFindBy(By arg0, WebElement arg1, WebDriver arg2) {
-
         System.out.println("After FindBy "+arg0.toString());
     }
 

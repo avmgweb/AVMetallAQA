@@ -3,7 +3,7 @@
 <suite name="SuiteLinks"  >
 
 
-    <test name="TestC1" allow-return-values="true">
+    <test name="TestLinks" >
         <classes>
             <class name = "checkLinks.checkAllLinks"/>
         </classes>

@@ -1,5 +1,6 @@
 package POM;
 
+import POM.AvmgPage.AvmgBasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -20,7 +21,7 @@ public class AdminBasePage extends BasePage {
         getDriver().findElement(By.xpath("//a[text()=\"Выйти\"]")).click();
     }
 
-    public  AvmgBasePage goToUrlFormBasePage(String url) {
+    public AvmgBasePage goToUrlFormBasePage(String url) {
         goToUrl(url);
         return new  AvmgBasePage(getDriver());
     }

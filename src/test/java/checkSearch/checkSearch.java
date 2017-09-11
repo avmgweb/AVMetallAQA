@@ -1,12 +1,11 @@
 package checkSearch;
 
-import BaseTest.BaseTest;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
-import POM.AvmgBasePage;
-import POM.AvmgRu.AvmgMainPage;
-import POM.AvmgRu.AvmgSearchPage;
-import POM.AvmgUa.AvmgMainPageUa;
+import POM.AvmgPage.AvmgBasePage;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageRu;
+import POM.AvmgPage.AvmgSearchPage;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageUa;
 import driver.Driver;
 import mail.Mails;
 import org.testng.Assert;
@@ -14,8 +13,11 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.util.HashSet;
 
+import static Screenshot.Screenshot.takeScreenshot;
 import static files.FileAV.deleteAllFilesFromFolder;
+import static files.FileAV.getAllFilesFromFolder;
 
 /**
  * Created by Дмитрий on 28.07.2017.
@@ -28,13 +30,17 @@ public class checkSearch{
     String loginGm = "avmg5040@gmail.com";
     String passwordGm = "Finave5040";
     String recipient = "awesome5040@gmail.com";
+    public HashSet<String> screenshotPathes;
+    public String folderForScreenshots = "src/main/java/screenshots";
+    String testName;
+
 
     @BeforeClass
     @Parameters({"browser", "language"})
     public void setUp(@Optional("chrome") String browser, @Optional("ua") String language) throws InterruptedException {
         switch (language){
             case "ua" :  avmgMainPage = new AvmgMainPageUa(browser);  break;
-            case "ru" :  avmgMainPage = new AvmgMainPage(browser);    break;
+            case "ru" :  avmgMainPage = new AvmgMainPageRu(browser);    break;
             default   :  break;
         }
         Driver.maximize();
@@ -89,13 +95,28 @@ public class checkSearch{
         }
     }
 
-    @AfterMethod
-    public void takeSkreenshots(ITestResult result) throws IOException {
-    }
-
     @AfterClass
     public void tearDown() {
         Driver.tearDown();
         Driver.nullDriver();
+        try {
+            screenshotPathes = getAllFilesFromFolder(folderForScreenshots);
+            if ((!screenshotPathes.isEmpty())){
+                Mails.sendScreenshot(loginGm, passwordGm, recipient,screenshotPathes, testName);
+                deleteAllFilesFromFolder(folderForScreenshots);
+            }
+        }
+        catch (NullPointerException e){
+            System.out.println("Скриншотов не обнаружено");
+        }
+    }
+
+
+    @AfterMethod
+    public void takeSkreenshots(ITestResult result) throws IOException {
+        testName = result.getInstanceName();
+        if (ITestResult.FAILURE == result.getStatus()){
+            takeScreenshot(result.getName());
+        }
     }
 }

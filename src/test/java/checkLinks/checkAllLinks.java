@@ -1,6 +1,9 @@
 package checkLinks;
 
 import BaseTest.BaseTest;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageEn;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageRu;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageUa;
 import files.FileAV;
 import mail.Mails;
 import org.testng.Assert;
@@ -31,7 +34,7 @@ public class checkAllLinks extends BaseTest {
         Assert.assertTrue(verifyLinkActive(linksUrl));
     }
 
-    @Test(enabled = false)
+    @Test(priority = 2)
     public void linksTestUa() throws IOException {
         linksUrl = avmgMainPage.getAllLinks("ua");
         boolean flag = verifyLinkActive(linksUrl);
@@ -40,15 +43,21 @@ public class checkAllLinks extends BaseTest {
         Assert.assertTrue(flag);
     }
 
-    @Test(priority = 3)
+    @Test(enabled = false)
     public void check404Ru() throws IOException {
-        linkUrl = avmgMainPage.get404Page("ru");
+        linkUrl = AvmgMainPageRu.get404Page();
         Assert.assertTrue(verifyLink404(linkUrl));
     }
 
-    @Test(priority = 4)
+    @Test(enabled = false)
     public void check404Ua() throws IOException {
-        linkUrl = avmgMainPage.get404Page("ua");
+        linkUrl = AvmgMainPageUa.get404Page();
+        Assert.assertTrue(verifyLink404(linkUrl));
+    }
+
+    @Test(enabled = false)
+    public void check404En() throws IOException {
+        linkUrl = AvmgMainPageEn.get404Page();
         Assert.assertTrue(verifyLink404(linkUrl));
     }
 

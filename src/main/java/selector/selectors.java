@@ -213,6 +213,16 @@ public  class selectors {
                         put("fileName", By.cssSelector("a[title=\"Просмотр файла\"]"));
                         break;
 
+                    case ("https://en.avmg.com.ua/contacts/"):
+                            put("name", By.cssSelector("input[name=\"form_text_296\"]"));
+                            put("surname", By.cssSelector("input[name=\"form_text_297\"]"));
+                            put("mail", By.cssSelector("input[name=\"form_text_298\"]"));
+                            put("telephone", By.cssSelector("input[name=\"form_text_299\"]"));
+                            put("company", By.cssSelector("input[name=\"form_text_300\"]"));
+                            put("message", By.cssSelector("textarea[name=\"form_textarea_301\"]"));
+                            put("idform", By.className("av-form"));
+                            break;
+
                     default:
                         System.out.println("ERROR");
                         break;

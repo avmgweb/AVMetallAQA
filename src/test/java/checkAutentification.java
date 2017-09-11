@@ -30,6 +30,7 @@ public class checkAutentification extends BaseTest {
         Assert.assertTrue(avmgMainPage.checkLogin());
         avmgMainPage.logOut();
         Assert.assertFalse(avmgMainPage.checkLogin());
+
     }
 
     @Test(priority = 3)

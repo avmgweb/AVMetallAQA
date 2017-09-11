@@ -1,11 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Avmg tests" >
 
-
     <suite-files>
-        <suite-file path="suites/linksSuite.xml"/>
-        <suite-file path="suites/metalwarehouseSuite.xml"/>
+        <suite-file path="suites/formsSuite.xml"/>
     </suite-files>
-
 
 </suite>

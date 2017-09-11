@@ -110,10 +110,5 @@ public class BasePage {
         js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, attributeName, value);
     }
 
-    public void takeScreenshot(String name) throws IOException {
-        String path = "src/main/java/screenshots/" + name +".jpg";
-        File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File(path));
-    }
 
 }

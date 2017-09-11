@@ -4,7 +4,7 @@ import BaseTest.BaseTest;
 import POM.AdminPage.AdminAvmgResultsFormPage;
 import POM.AdminPage.AdminAvmgSettingsFormPage;
 import selector.selectors;
-import POM.AvmgBasePage;
+import POM.AvmgPage.AvmgBasePage;
 import models.RequestAvmg;
 import org.openqa.selenium.By;
 import org.testng.Assert;

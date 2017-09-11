@@ -2,13 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="SuiteMetalwarehouses"  >
 
-
-    <test name="TestC1" allow-return-values="true">
+    <test name="TestMetalwarehousesRu" allow-return-values="true">
         <classes>
-            <class name = "checkMetalwarehouses"/>
+            <class name = "checkMetalwarehouses.checkMetalwarehousesRu"/>
         </classes>
     </test>
 
-
+    <test name="TestMetalwarehousesUa" allow-return-values="true">
+        <classes>
+            <class name = "checkMetalwarehouses.checkMetalwarehousesUa"/>
+        </classes>
+    </test>
 
 </suite>

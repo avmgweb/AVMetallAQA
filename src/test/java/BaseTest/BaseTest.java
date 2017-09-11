@@ -1,18 +1,19 @@
 package BaseTest;
 
-import POM.AvmgRu.AvmgMainPage;
+import POM.AvmgPage.AvmgBasePage;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageAbstract;
+import POM.AvmgPage.AvmgMainPage.AvmgMainPageRu;
 import POM.AdminPage.AdminAvmgMainPage;
 import driver.Driver;
 import mail.Mails;
 import org.openqa.selenium.WebDriver;
-import org.testng.ISuiteResult;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Set;
 
+import static Screenshot.Screenshot.takeScreenshot;
 import static files.FileAV.deleteAllFilesFromFolder;
 import static files.FileAV.getAllFilesFromFolder;
 
@@ -20,8 +21,7 @@ import static files.FileAV.getAllFilesFromFolder;
  * Created by Дмитрий on 03.05.2017.
  */
 public abstract class BaseTest {
-    public  boolean isMobileTesting;
-    public AvmgMainPage avmgMainPage;
+    public AvmgMainPageRu avmgMainPage;
     public AdminAvmgMainPage adminAvmgMainPage;
     public String loginGm = "avmg5040@gmail.com";
     public String passwordGm = "Finave5040";
@@ -35,7 +35,8 @@ public abstract class BaseTest {
     @BeforeClass
     @Parameters({"browser"})
     public void setUp(@Optional("chrome") String browser){
-        avmgMainPage = new AvmgMainPage(browser);
+        deleteAllFilesFromFolder(folderForScreenshots);
+        avmgMainPage = new AvmgMainPageRu(browser);
         Driver.maximize();
     }
 
@@ -43,18 +44,23 @@ public abstract class BaseTest {
     public void tearDown() {
         Driver.tearDown();
         Driver.nullDriver();
-        screenshotPathes = getAllFilesFromFolder(folderForScreenshots);
-        if ((!screenshotPathes.isEmpty())){
-            Mails.sendScreenshot(loginGm, passwordGm, recipient,screenshotPathes, testName);
-            deleteAllFilesFromFolder(folderForScreenshots);
+        try {
+            screenshotPathes = getAllFilesFromFolder(folderForScreenshots);
+            if ((!screenshotPathes.isEmpty())){
+                Mails.sendScreenshot(loginGm, passwordGm, recipient,screenshotPathes, testName);
+                deleteAllFilesFromFolder(folderForScreenshots);
+            }
+        }
+        catch (NullPointerException e){
+            System.out.println("Скриншотов не обнаружено");
         }
     }
 
     @AfterMethod
     public void takeSkreenshots(ITestResult result) throws IOException {
-        if (ITestResult.FAILURE == result.getStatus()){
-            avmgMainPage.takeScreenshot(result.getName());
-        }
         testName = result.getInstanceName();
+        if (ITestResult.FAILURE == result.getStatus()){
+            takeScreenshot(result.getName());
+        }
     }
 }

@@ -22,8 +22,8 @@ import static files.FileAV.*;
  */
 public class checkFormCareer extends BaseTest {
 
-    String login = "awe5040";
-    String password = "Qwerty5040+";
+    String login = "d.prikhodko";
+    String password = "mc7nqrsH";
     CareerAvmg careerAvmg;
     CareerAvmg careerAvmgAdmin;
     String idForm;

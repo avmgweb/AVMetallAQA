@@ -17,7 +17,7 @@ public class AvmgSearchPage extends AvmgBasePage {
     }
 
     public boolean isListOfProductionButtonDisplayed() {
-        return isElementDisplayed(By.className("av-form-elements-av_site_alt-button"));
+        return isElementDisplayed(By.className("av-form-button-alt"));
     }
 
     public boolean isSearchListDisplayed(){
@@ -25,9 +25,9 @@ public class AvmgSearchPage extends AvmgBasePage {
     }
 
     public AvmgSearchPage searchFromPage (String key){
-        type("wait", By.className("av-form-elements-element-search"), "");
-        type("write", By.className("av-form-elements-element-search"), key);
-        getDriver().findElement(By.className("av-form-elements-element-search")).sendKeys(Keys.ENTER);
+        type("wait", By.xpath("//div[@data-av-form-item=\"search\"]/input"), "");
+        type("write", By.xpath("//div[@data-av-form-item=\"search\"]/input"), key);
+        getDriver().findElement(By.xpath("//div[@data-av-form-item=\"search\"]/input")).sendKeys(Keys.ENTER);
         return this;
     }
 

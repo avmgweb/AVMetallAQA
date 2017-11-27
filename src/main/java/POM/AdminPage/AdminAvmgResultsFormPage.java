@@ -175,9 +175,9 @@ public class AdminAvmgResultsFormPage extends AdminBasePage {
             careerAvmg.setMessage(getValueOfElement(selector.get("message")));
             careerAvmg.setLink(getValueOfElement(selector.get("link")));
             careerAvmg.setFileName(getTextOfElement(selector.get("fileName")));
-            WebElement link = getDriver().findElement(By.cssSelector("a[href *=\"/bitrix/tools/form_show_file.php?\"]"));
+            WebElement link = getDriver().findElements(By.cssSelector("a[class=\"tablebodylink\"]")).get(1);
             Point point = link.getLocation();
-            goToPoints(point.getX(), point.getY());
+            goToPoints(point.getX(), point.getY()-200);
             link.click();
 
         } catch (Exception e){

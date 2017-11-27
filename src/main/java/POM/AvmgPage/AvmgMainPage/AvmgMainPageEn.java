@@ -8,9 +8,11 @@ import org.openqa.selenium.WebDriver;
 public class AvmgMainPageEn extends  AvmgMainPageAbstract {
 
     private static String link404 = "https://en.avmg.com.ua/404";
+    public static String AvmgMainPageUrl = "https://en.avmg.com.ua/";
 
     public AvmgMainPageEn(String browser) {
         super(browser);
+        goToUrl(AvmgMainPageUrl);
     }
 
     public AvmgMainPageEn(WebDriver driver) {

@@ -48,7 +48,7 @@ public abstract class  AvmgMetalwarehousesAbstract extends AvmgBasePage {
     public abstract boolean isFilterMainDirectionsDisplayed();
 
     public boolean isCancelFiltrDisplayed(){
-        return isElementDisplayed(By.cssSelector("a.av-form-elements-def-alt-button"));
+        return isElementDisplayed(By.className("av-form-button-alt2"));
     }
 
     public boolean checkMainDirectionsFilter() throws InterruptedException {

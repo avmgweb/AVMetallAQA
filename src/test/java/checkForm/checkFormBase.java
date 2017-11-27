@@ -18,8 +18,8 @@ import java.util.Map;
  */
 public class checkFormBase extends BaseTest {
 
-    String login = "awe5040";
-    String password = "Qwerty5040+";
+    String login = "d.prikhodko";
+    String password = "mc7nqrsH";
     RequestAvmg requestAvmg;
     RequestAvmg requestAvmgAdmin;
     String idForm;

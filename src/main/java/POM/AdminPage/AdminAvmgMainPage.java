@@ -33,6 +33,7 @@ public class AdminAvmgMainPage extends AdminBasePage {
 
         type("click", By.id("global_menu_services"), "");
         Thread.sleep(1000);
+        goToPoints(189,1745);
         if (!(isElementDisplayed(By.xpath("//*[text()=\"Настройка форм\"]")))){
             type("click", By.xpath("//*[contains (text(), \"Веб-форм\") ]"), "");
         }

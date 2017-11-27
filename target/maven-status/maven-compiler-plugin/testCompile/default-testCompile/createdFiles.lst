@@ -1,5 +1,8 @@
+checkLinks\checkAllLinks.class
 checkForm\checkFormBase.class
+checkMetalwarehouses\checkMetalwarehousesUa.class
 checkSearch\checkSearch.class
+checkMetalwarehouses\checkMetalwarehousesRu.class
 checkAutentification.class
 checkForm\checkFormPartners.class
 BaseTest\BaseTest.class

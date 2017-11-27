@@ -1,6 +1,7 @@
 package POM.AvmgPage;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -44,8 +45,9 @@ public class AvmgMetalwarehousesRegionPage extends AvmgBasePage {
             actions.perform();
             for (WebElement element :  getDriver().findElements(By.xpath("//a[@class=\"page additional\"]"))){
                 if ((Integer.parseInt(element.getText())) == page) {
+                    Point elementPoint = element.getLocation();
+                    goToPoints(elementPoint.getX(), elementPoint.getY());
                     element.click();
-                    System.out.println(sum);
                     flag = true;
                     break;
                 }
@@ -53,9 +55,8 @@ public class AvmgMetalwarehousesRegionPage extends AvmgBasePage {
             }
             sum += getDriver().findElements(By.cssSelector("div.av-bases-list-element")).size();
         }
-        Actions actions = new Actions(getDriver());
-        actions.moveToElement(getDriver().findElement(By.className("av-pager")));
-        actions.perform();
+        Point avPage = getDriver().findElement(By.className("av-pager")).getLocation();
+        goToPoints(avPage.getX(),avPage.getY());
         getDriver().findElements(By.xpath("//a[@class=\"page\"]")).get(getDriver().findElements(By.xpath("//a[@class=\"page\"]")).size() - 1).click();
         sum += getDriver().findElements(By.cssSelector("div.av-bases-list-element")).size();
         return sum;

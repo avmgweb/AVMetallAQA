@@ -18,8 +18,8 @@ import java.util.Map;
  * Created by Дмитрий on 18.07.2017.
  */
 public class checkFormPartners extends BaseTest {
-    String login = "awe5040";
-    String password = "Qwerty5040+";
+    String login = "d.prikhodko";
+    String password = "mc7nqrsH";
     String idForm;
     AdminAvmgSettingsFormPage adminAvmgSettingsFormPage;
     AdminAvmgResultsFormPage adminAvmgResultsFormPage;

@@ -18,6 +18,7 @@ public class AvmgMainPageRu extends AvmgMainPageAbstract {
     private static String link404 = "https://ru.avmg.com.ua/404";
     public static String AvmgMainPageUrl = "https://ru.avmg.com.ua/";
 
+
     public AvmgMainPageRu(String browser) {
         super(browser);
         goToUrl(AvmgMainPageUrl);

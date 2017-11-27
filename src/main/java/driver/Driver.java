@@ -24,11 +24,6 @@ public class Driver {
     private static WebDriver driver;
 
     public static WebDriver getInstance(String browser) {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "src/main/resources/drivers/geckodriver.exe");
-        System.setProperty("phantomjs.binary.path", "src/main/resources/drivers/phantomjs.exe");
-        System.setProperty("webdriver.opera.driver", "src/main/resources/drivers/operadriver.exe");
-        System.setProperty("webdriver.ie.driver", "src/main/resources/drivers/IEDriverServer.exe");
 
         String downloadFilepath = "C:\\Users\\Дмитрий\\Documents\\AQA\\AVMetallAQA\\src\\main\\folderForCareer";
         Map<String, Object> preferences = new Hashtable<String, Object>();
@@ -43,29 +38,37 @@ public class Driver {
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
-        DesiredCapabilities dc1 = DesiredCapabilities.internetExplorer();
-        dc1.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setAcceptInsecureCerts(true);
-
         if (driver==null)
         {
             switch (browser)
             {
                 case "firefox":
+                    System.setProperty("webdriver.gecko.driver", "src/main/resources/drivers/geckodriver.exe");
                     driver = new FirefoxDriver();
                     break;
                 case "chrome":
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
                     driver = new ChromeDriver(capabilities);
                     break;
                 case "phantomjs":
+                    System.setProperty("phantomjs.binary.path", "src/main/resources/drivers/phantomjs.exe");
                     driver = new PhantomJSDriver();
                     break;
                 case "ie":
+                    System.setProperty("webdriver.ie.driver", "src/main/resources/drivers/IEDriverServer.exe");
+                    DesiredCapabilities dc1 = DesiredCapabilities.internetExplorer();
+                    dc1.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+                    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+                    desiredCapabilities.setAcceptInsecureCerts(true);
                     driver = new InternetExplorerDriver(dc1);
                     break;
                 case "opera":
-                    driver = new OperaDriver();
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/operadriver.exe");
+                    options = new ChromeOptions();
+                    options.setBinary("C:\\Program Files\\Opera\\47.0.2631.80\\opera.exe");
+                    capabilities = new DesiredCapabilities();
+                    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                    driver = new ChromeDriver(capabilities);
                     break;
                 case "edge":
                     driver = new EdgeDriver();
@@ -74,8 +77,7 @@ public class Driver {
             }
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(75, TimeUnit.SECONDS);
-            EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
-            return eventDriver.register(new WebEventListener());
+            return new EventFiringWebDriver(driver).register(new WebEventListener());
         }
         maximize();
         return driver;

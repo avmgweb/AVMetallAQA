@@ -1,0 +1,126 @@
+{
+  "uid" : "a28489d46ac0c2fe",
+  "name" : "checkResultPage",
+  "fullName" : "checkSearch.checkSearch.checkResultPage",
+  "historyId" : "473460b2c6937187c4f0ad27737f81b4",
+  "time" : {
+    "start" : 1510760419799,
+    "stop" : 1510760421424,
+    "duration" : 1625
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : true
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "takeSkreenshots",
+    "time" : {
+      "start" : 1510760421428,
+      "stop" : 1510760421428,
+      "duration" : 0
+    },
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testClass",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkResultPage"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteSearch"
+  }, {
+    "name" : "suite",
+    "value" : "ChromeTestSearchRu4"
+  }, {
+    "name" : "subSuite",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-ACURQ7O"
+  }, {
+    "name" : "thread",
+    "value" : "2196@DESKTOP-ACURQ7O.main(1)"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "true"
+  }, {
+    "name" : "arg1",
+    "value" : "Метал"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "72c3ddfc3d3b44b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510760403541,
+        "stop" : 1510760405535,
+        "duration" : 1994
+      }
+    }, {
+      "uid" : "b2561c996ca0ce3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510760348777,
+        "stop" : 1510760350916,
+        "duration" : 2139
+      }
+    }, {
+      "uid" : "a6949e1826c5415e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510760327978,
+        "stop" : 1510760330442,
+        "duration" : 2464
+      }
+    }, {
+      "uid" : "35d11ff427f2fc57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510759197616,
+        "stop" : 1510759199162,
+        "duration" : 1546
+      }
+    }, {
+      "uid" : "b789a2c6e5151bc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510759182189,
+        "stop" : 1510759184710,
+        "duration" : 2521
+      }
+    }, {
+      "uid" : "6e76615fcbe73b37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510759167923,
+        "stop" : 1510759170537,
+        "duration" : 2614
+      }
+    }, {
+      "uid" : "9a1151fded26af5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1510759146846,
+        "stop" : 1510759149201,
+        "duration" : 2355
+      }
+    } ],
+    "categories" : [ ]
+  }
+}

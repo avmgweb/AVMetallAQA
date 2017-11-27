@@ -7,8 +7,10 @@ import POM.AvmgPage.AvmgMainPage.AvmgMainPageRu;
 import POM.AvmgPage.AvmgSearchPage;
 import POM.AvmgPage.AvmgMainPage.AvmgMainPageUa;
 import driver.Driver;
+import driverSupport.TestReports;
 import mail.Mails;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -22,7 +24,9 @@ import static files.FileAV.getAllFilesFromFolder;
 /**
  * Created by Дмитрий on 28.07.2017.
  */
+@Listeners(TestReports.class)
 public class checkSearch{
+    String browser;
     AdminAvmgSettingsFormPage adminAvmgSettingsFormPage;
     AdminAvmgResultsFormPage adminAvmgResultsFormPage;
     AvmgBasePage avmgMainPage;
@@ -38,6 +42,7 @@ public class checkSearch{
     @BeforeClass
     @Parameters({"browser", "language"})
     public void setUp(@Optional("chrome") String browser, @Optional("ua") String language) throws InterruptedException {
+        this.browser = browser;
         switch (language){
             case "ua" :  avmgMainPage = new AvmgMainPageUa(browser);  break;
             case "ru" :  avmgMainPage = new AvmgMainPageRu(browser);    break;
@@ -113,8 +118,8 @@ public class checkSearch{
 
 
     @AfterMethod
-    public void takeSkreenshots(ITestResult result) throws IOException {
-        testName = result.getInstanceName();
+    public void takeSkreenshots(ITestResult result , ITestContext testContext) throws IOException {
+        testName = testContext.getName()  + " " + result.getInstanceName() + " " + browser;
         if (ITestResult.FAILURE == result.getStatus()){
             takeScreenshot(result.getName());
         }

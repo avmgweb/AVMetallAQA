@@ -1,3 +1,4 @@
+C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\driverSupport\TestReports.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\models\RequestAvmg.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\Retry\TestListener.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\models\CareerAvmg.java
@@ -15,6 +16,7 @@ C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AdminPage\Us
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgSearchPage.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgMainPage\AvmgMainPageRu.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgPlasmaCuttingMetalPage.java
+C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgMainPage\AvmgMainPageEn.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgContactPage.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\files\FileAV.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AdminPage\AdminAvmgSettingsFormPage.java
@@ -33,3 +35,5 @@ C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AdminBasePag
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\Header.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\models\FunctionBase.java
 C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\POM\AvmgPage\AvmgGasCuttingMetalPage.java
+C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\driver\Decorator.java
+C:\Users\Дмитрий\Documents\AQA\AVMetallAQA\src\main\java\driverSupport\WebDriverExtensions.java

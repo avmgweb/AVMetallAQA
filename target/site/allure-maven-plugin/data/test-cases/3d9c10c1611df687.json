@@ -1,0 +1,63 @@
+{
+  "uid" : "3d9c10c1611df687",
+  "name" : "checkH1AndTitle",
+  "fullName" : "checkSearch.checkSearch.checkH1AndTitle",
+  "historyId" : "f5fe02ec43d704a8560e76a8d6f08dd1",
+  "time" : {
+    "start" : 1510760350925,
+    "stop" : 1510760350985,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "takeSkreenshots",
+    "time" : {
+      "start" : 1510760350990,
+      "stop" : 1510760350990,
+      "duration" : 0
+    },
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testClass",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkH1AndTitle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteSearch"
+  }, {
+    "name" : "suite",
+    "value" : "ChromeTestSearchRu2"
+  }, {
+    "name" : "subSuite",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-ACURQ7O"
+  }, {
+    "name" : "thread",
+    "value" : "2196@DESKTOP-ACURQ7O.main(1)"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ua"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

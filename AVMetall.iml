@@ -11,6 +11,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.yandex.qatools.allure:allure-testng-adaptor:1.5.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.yandex.qatools.allure:allure-java-aspects:1.5.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.yandex.qatools.allure:allure-java-adaptor-api:1.5.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.yandex.qatools.allure:allure-java-annotations:1.5.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.yandex.qatools.allure:allure-model:1.5.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: ru.qatools.commons:properties:2.0.RC5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-api:1.7.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.tika:tika-core:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.aspectj:aspectjrt:1.8.3" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:3.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:3.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.4.0" level="project" />
@@ -55,9 +65,10 @@
     <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.testng:testng:6.11" level="project" />
-    <orderEntry type="library" name="Maven: com.beust:jcommander:1.64" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.17" level="project" />
+    <orderEntry type="library" name="Maven: org.testng:testng:6.8" level="project" />
+    <orderEntry type="library" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.27" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.6" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.uncommons:reportng:1.1.4" level="project" />

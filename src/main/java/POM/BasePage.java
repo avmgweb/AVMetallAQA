@@ -59,7 +59,8 @@ public class BasePage {
 
     public void type (String condition, By locator, String text){
         switch (condition){
-            case "click" : (new WebDriverWait(getDriver(), 10))
+            case "click" : goToPoints(getDriver().findElement(locator).getLocation().getX(),getDriver().findElement(locator).getLocation().getY());
+                (new WebDriverWait(getDriver(), 10))
                     .until(ExpectedConditions.elementToBeClickable(locator));
                             getDriver().findElement(locator).click();
                 break;

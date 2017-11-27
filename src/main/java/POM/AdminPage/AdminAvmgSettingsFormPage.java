@@ -30,6 +30,7 @@ public class AdminAvmgSettingsFormPage extends AdminBasePage {
     }
 
     public AdminAvmgResultsFormPage goToResultsFormPage(String id) throws InterruptedException {
+        goToPoints(266, 958);
         String xpath = "//a[contains(@href,'form_result_list.php?lang=ru&WEB_FORM_ID=" + id + "')]";
         type("click", By.xpath(xpath), "");
         return new AdminAvmgResultsFormPage(getDriver());

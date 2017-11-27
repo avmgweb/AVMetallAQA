@@ -1,0 +1,69 @@
+{
+  "uid" : "33cb5d72a9ccc422",
+  "name" : "checkSearchWithTwoKeysInDifferentOrders",
+  "fullName" : "checkSearch.checkSearch.checkSearchWithTwoKeysInDifferentOrders",
+  "historyId" : "92753e9342eb3d2713a7a6f9331a41da",
+  "time" : {
+    "start" : 1510759149307,
+    "stop" : 1510759149307,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "takeSkreenshots",
+    "time" : {
+      "start" : 1510759149312,
+      "stop" : 1510759149312,
+      "duration" : 0
+    },
+    "status" : "unknown",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testClass",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkSearchWithTwoKeysInDifferentOrders"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteSearch"
+  }, {
+    "name" : "suite",
+    "value" : "ChromeTestSearchRu1"
+  }, {
+    "name" : "subSuite",
+    "value" : "checkSearch.checkSearch"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-ACURQ7O"
+  }, {
+    "name" : "thread",
+    "value" : "7464@DESKTOP-ACURQ7O.main(1)"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "false"
+  }, {
+    "name" : "arg1",
+    "value" : "ddddddddddd"
+  }, {
+    "name" : "arg2",
+    "value" : "АВ"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

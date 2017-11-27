@@ -2,6 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="SuiteForms"  >
 
+
+
+    <test name="ChromeTestMainRu" >
+        <parameter name = "browser" value="chrome" />
+        <parameter name = "type" value="common"/>
+        <parameter name = "url" value="https://ru.avmg.com.ua"/>
+        <classes>
+            <class name="checkForm.checkFormBase" />
+        </classes>
+    </test>
+
+
     <test name="ChromeTestContactEn"   >
         <parameter name = "browser" value="chrome" />
         <parameter name = "url" value="https://en.avmg.com.ua/contacts/"/>
@@ -20,14 +32,7 @@
         </classes>
     </test>
 
-    <test name="ChromeTestMainRu" >
-        <parameter name = "browser" value="chrome" />
-        <parameter name = "type" value="common"/>
-        <parameter name = "url" value="https://ru.avmg.com.ua"/>
-        <classes>
-            <class name="checkForm.checkFormBase" />
-        </classes>
-    </test>
+
 
     <test name="ChromeTestContactRu" >
         <parameter name = "browser" value="chrome" />

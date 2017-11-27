@@ -1,5 +1,621 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
+  <suite name="Avmg tests" duration-ms="0" started-at="2017-11-15T16:01:21Z" finished-at="2017-11-15T16:01:21Z">
+    <groups>
+    </groups>
+  </suite> <!-- Avmg tests -->
+  <suite name="SuiteSearch" duration-ms="174026" started-at="2017-11-15T15:58:27Z" finished-at="2017-11-15T16:01:21Z">
+    <groups>
+    </groups>
+    <test name="ChromeTestSearchRu1" duration-ms="35112" started-at="2017-11-15T15:58:27Z" finished-at="2017-11-15T15:59:02Z">
+      <class name="checkSearch.checkSearch">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="setUp" is-config="true" duration-ms="23964" started-at="2017-11-15T17:58:27Z" finished-at="2017-11-15T17:58:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="checkResultList" duration-ms="7142" started-at="2017-11-15T17:58:51Z" finished-at="2017-11-15T17:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultList -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="takeSkreenshots" is-config="true" duration-ms="1" started-at="2017-11-15T17:58:58Z" finished-at="2017-11-15T17:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultList status=SUCCESS method=checkSearch.checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7862f56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="checkResultPage" duration-ms="2113" started-at="2017-11-15T17:58:58Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultPage -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultPage status=SUCCESS method=checkSearch.checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7862f56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="checkH1AndTitle" duration-ms="68" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkH1AndTitle -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkH1AndTitle status=SUCCESS method=checkSearch.checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7862f56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="checkSearchWithTwoKeysInDifferentOrders" duration-ms="2" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[АВ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchWithTwoKeysInDifferentOrders -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="tearDown" is-config="true" duration-ms="1744" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@4de8b406]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:00Z" finished-at="2017-11-15T17:59:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSearchWithTwoKeysInDifferentOrders status=SUCCESS method=checkSearch.checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@4de8b406] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7862f56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+      </class> <!-- checkSearch.checkSearch -->
+    </test> <!-- ChromeTestSearchRu1 -->
+    <test name="ChromeTestSearchRu2" duration-ms="19183" started-at="2017-11-15T15:59:02Z" finished-at="2017-11-15T15:59:21Z">
+      <class name="checkSearch.checkSearch">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="setUp" is-config="true" duration-ms="9384" started-at="2017-11-15T17:59:02Z" finished-at="2017-11-15T17:59:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="checkResultList" duration-ms="6764" started-at="2017-11-15T17:59:12Z" finished-at="2017-11-15T17:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultList -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:18Z" finished-at="2017-11-15T17:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultList status=SUCCESS method=checkSearch.checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a12c404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="checkResultPage" duration-ms="1946" started-at="2017-11-15T17:59:18Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultPage -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultPage status=SUCCESS method=checkSearch.checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a12c404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="checkH1AndTitle" duration-ms="68" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkH1AndTitle -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkH1AndTitle status=SUCCESS method=checkSearch.checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a12c404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="checkSearchWithTwoKeysInDifferentOrders" duration-ms="2" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ddddddddddd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[АВ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchWithTwoKeysInDifferentOrders -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSearchWithTwoKeysInDifferentOrders status=SUCCESS method=checkSearch.checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@6767c1fc] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a12c404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:checkSearch.checkSearch@6767c1fc]" name="tearDown" is-config="true" duration-ms="1014" started-at="2017-11-15T17:59:20Z" finished-at="2017-11-15T17:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- checkSearch.checkSearch -->
+    </test> <!-- ChromeTestSearchRu2 -->
+    <test name="ChromeTestSearchRu3" duration-ms="96854" started-at="2017-11-15T15:59:21Z" finished-at="2017-11-15T16:00:58Z">
+      <class name="checkSearch.checkSearch">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="setUp" is-config="true" duration-ms="50507" started-at="2017-11-15T17:59:21Z" finished-at="2017-11-15T18:00:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="checkResultList" duration-ms="1602" started-at="2017-11-15T18:00:12Z" finished-at="2017-11-15T18:00:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Металл]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultList -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:00:14Z" finished-at="2017-11-15T18:00:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultList status=SUCCESS method=checkSearch.checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1941a8ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="checkResultPage" duration-ms="2786" started-at="2017-11-15T18:00:14Z" finished-at="2017-11-15T18:00:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Металл]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultPage -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="takeSkreenshots" is-config="true" duration-ms="1" started-at="2017-11-15T18:00:16Z" finished-at="2017-11-15T18:00:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultPage status=SUCCESS method=checkSearch.checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1941a8ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="checkH1AndTitle" duration-ms="73" started-at="2017-11-15T18:00:16Z" finished-at="2017-11-15T18:00:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkH1AndTitle -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="takeSkreenshots" is-config="true" duration-ms="1" started-at="2017-11-15T18:00:16Z" finished-at="2017-11-15T18:00:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkH1AndTitle status=SUCCESS method=checkSearch.checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1941a8ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="checkSearchWithTwoKeysInDifferentOrders" duration-ms="40328" started-at="2017-11-15T18:00:16Z" finished-at="2017-11-15T18:00:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Металл]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[АВ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchWithTwoKeysInDifferentOrders -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:00:57Z" finished-at="2017-11-15T18:00:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSearchWithTwoKeysInDifferentOrders status=SUCCESS method=checkSearch.checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@18be83e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1941a8ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:checkSearch.checkSearch@18be83e4]" name="tearDown" is-config="true" duration-ms="1549" started-at="2017-11-15T18:00:57Z" finished-at="2017-11-15T18:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- checkSearch.checkSearch -->
+    </test> <!-- ChromeTestSearchRu3 -->
+    <test name="ChromeTestSearchRu4" duration-ms="22343" started-at="2017-11-15T16:00:58Z" finished-at="2017-11-15T16:01:21Z">
+      <class name="checkSearch.checkSearch">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="setUp" is-config="true" duration-ms="13335" started-at="2017-11-15T18:00:58Z" finished-at="2017-11-15T18:01:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="checkResultList" duration-ms="1523" started-at="2017-11-15T18:01:12Z" finished-at="2017-11-15T18:01:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Метал]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultList -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:01:13Z" finished-at="2017-11-15T18:01:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultList status=SUCCESS method=checkSearch.checkResultList(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22d7b4f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="checkResultPage" duration-ms="3354" started-at="2017-11-15T18:01:13Z" finished-at="2017-11-15T18:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Метал]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResultPage -->
+        <test-method status="PASS" signature="checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="checkH1AndTitle" duration-ms="82" started-at="2017-11-15T18:01:17Z" finished-at="2017-11-15T18:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ua]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkH1AndTitle -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:01:17Z" finished-at="2017-11-15T18:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkResultPage status=SUCCESS method=checkSearch.checkResultPage(java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22d7b4f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:01:17Z" finished-at="2017-11-15T18:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkH1AndTitle status=SUCCESS method=checkSearch.checkH1AndTitle(java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22d7b4f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+        <test-method status="PASS" signature="checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="checkSearchWithTwoKeysInDifferentOrders" duration-ms="2973" started-at="2017-11-15T18:01:17Z" finished-at="2017-11-15T18:01:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Метал]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[АВ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchWithTwoKeysInDifferentOrders -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="tearDown" is-config="true" duration-ms="1066" started-at="2017-11-15T18:01:20Z" finished-at="2017-11-15T18:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="takeSkreenshots(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:checkSearch.checkSearch@26be92ad]" name="takeSkreenshots" is-config="true" duration-ms="0" started-at="2017-11-15T18:01:20Z" finished-at="2017-11-15T18:01:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSearchWithTwoKeysInDifferentOrders status=SUCCESS method=checkSearch.checkSearchWithTwoKeysInDifferentOrders(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:checkSearch.checkSearch@26be92ad] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22d7b4f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeSkreenshots -->
+      </class> <!-- checkSearch.checkSearch -->
+    </test> <!-- ChromeTestSearchRu4 -->
+  </suite> <!-- SuiteSearch -->
 </testng-results>

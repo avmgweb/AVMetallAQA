@@ -1,14 +1,17 @@
 import BaseTest.BaseTest;
 import POM.AdminPage.UsersListPage;
+import driverSupport.TestReports;
 import models.UserAvmg;
 import mail.Mails;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  * Created by Дмитрий on 22.06.2017.
  */
+
 public class checkRegistration extends BaseTest {
     UserAvmg userAvmg;
     UserAvmg userAvmgAdmin;

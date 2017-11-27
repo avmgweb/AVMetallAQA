@@ -42,15 +42,13 @@ public class AvmgBasePage extends BasePage {
         return entertButton.getAttribute("class");
     }
 
-    public AvmgBasePage callFormMenu(){
-        System.out.println(checkFormMenu());
+    public AvmgBasePage callFormMenu() throws InterruptedException {
         if (checkFormMenu().equals("av-auth-form-call-button"))
             type("click",By.id("av-auth-guest-bar"),"");
         return this;
     }
 
     public AvmgBasePage closeFormMenu(){
-
         if (checkFormMenu().equals("av-auth-form-call-button active"))
             type("click",By.className("close-form-button"),"");
         return this;
@@ -67,7 +65,7 @@ public class AvmgBasePage extends BasePage {
         if (isElementDisplayed(By.xpath(".//*[@id='av-auth-guest-form']/form[1]/div[1]")))
             return null;
         else (new WebDriverWait(getDriver(), 10))
-                .until(ExpectedConditions.visibilityOf(getDriver().findElement(By.id("bx-panel-menu-text"))));
+                .until(ExpectedConditions.visibilityOf(getDriver().findElement(By.id("av-auth-user-panel"))));
 
         return this;
     }
@@ -75,9 +73,10 @@ public class AvmgBasePage extends BasePage {
 
 
     public boolean isAdminPage(){
-
         return isElementDisplayed(By.id("bx-panel-top"));
     }
+
+
 
     public AvmgBasePage loginFacebook(String loginFb, String passwordFB) throws InterruptedException {
         ((JavascriptExecutor)getDriver()).executeScript("window.open()");
@@ -302,7 +301,7 @@ public class AvmgBasePage extends BasePage {
     }
 
     public boolean enableSuccessfulSending(){
-        return isElementDisplayed(By.xpath("//*[@class=\"av-alert-popup\"]"));
+        return isElementDisplayed(By.xpath("//*[@class=\"av-alert-popup ok\"]"));
     }
 
     public void closeSuccessfulSending(){
@@ -369,4 +368,16 @@ public class AvmgBasePage extends BasePage {
         return new Header(getDriver());
     }
 
+    public boolean checkDisplayedErrorWithMessagtAboutIncorrectPasswordOrLogin() {
+        return isElementDisplayed(By.className("errors-block"));
+    }
+
+    public boolean checkDisplayedAllertWithMessage() {
+        return isElementDisplayed(By.className("av-alert-popup"));
+    }
+
+    public AvmgBasePage closeAllert() {
+        type("click", By.className("close-form-button"), "");
+        return this;
+    }
 }

@@ -58,7 +58,7 @@ public class checkMetalwarehousesUa extends BaseTest {
         Assert.assertEquals(avmgMetalwarehousesPage.getTitle(),
                 "Металопрокат Волинська область | Металобази Волинська область АВ метал груп | Купити метал в Волинська область");
         Assert.assertEquals(avmgMetalwarehousesRegionPage.getH1(), "Волинська область");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 12, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 13, "Error");
     }
 
     @Test (priority = 5)
@@ -157,7 +157,7 @@ public class checkMetalwarehousesUa extends BaseTest {
         Assert.assertEquals(avmgMetalwarehousesPage.getTitle(),
                 "Металопрокат Миколаївська область | Металобази Миколаївська область АВ метал груп | Купити метал в Миколаївська область");
         Assert.assertEquals(avmgMetalwarehousesRegionPage.getH1(), "Миколаївська область");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 7, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 8, "Error");
     }
 
     @Test (priority = 16)
@@ -184,7 +184,7 @@ public class checkMetalwarehousesUa extends BaseTest {
         Assert.assertEquals(avmgMetalwarehousesPage.getTitle(),
                 "Металопрокат Рівненська область | Металобази Рівненська область АВ метал груп | Купити метал в Рівненська область");
         Assert.assertEquals(avmgMetalwarehousesRegionPage.getH1(), "Рівненська область");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 8, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 9, "Error");
     }
 
     @Test (priority = 19)
@@ -220,7 +220,7 @@ public class checkMetalwarehousesUa extends BaseTest {
         Assert.assertEquals(avmgMetalwarehousesPage.getTitle(),
                 "Металопрокат Херсонська область | Металобази Херсонська область АВ метал груп | Купити метал в Херсонська область");
         Assert.assertEquals(avmgMetalwarehousesRegionPage.getH1(), "Херсонська область");
-        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 9, "Error");
+        Assert.assertTrue(avmgMetalwarehousesRegionPage.countMetalwarehouses() == 10, "Error");
     }
 
     @Test (priority = 23)

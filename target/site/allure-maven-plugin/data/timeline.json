@@ -1,0 +1,105 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 4,
+    "unknown" : 0,
+    "total" : 4
+  },
+  "time" : {
+    "minDuration" : 60,
+    "maxDuration" : 2128,
+    "sumDuration" : 4733,
+    "start" : 1510760418860,
+    "stop" : 1510760423632,
+    "duration" : 4772
+  },
+  "children" : [ {
+    "uid" : "22e63123a2d69b05",
+    "name" : "DESKTOP-ACURQ7O",
+    "time" : {
+      "minDuration" : 60,
+      "maxDuration" : 2128,
+      "sumDuration" : 4733,
+      "start" : 1510760418860,
+      "stop" : 1510760423632,
+      "duration" : 4772
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "fa13a17e06caf026",
+      "name" : "2196@DESKTOP-ACURQ7O.main(1)",
+      "time" : {
+        "minDuration" : 60,
+        "maxDuration" : 2128,
+        "sumDuration" : 4733,
+        "start" : 1510760418860,
+        "stop" : 1510760423632,
+        "duration" : 4772
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "56c3e46e3b512aab",
+        "name" : "checkResultList",
+        "time" : {
+          "start" : 1510760418860,
+          "stop" : 1510760419780,
+          "duration" : 920
+        },
+        "status" : "passed",
+        "flaky" : true,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "a28489d46ac0c2fe",
+        "name" : "checkResultPage",
+        "time" : {
+          "start" : 1510760419799,
+          "stop" : 1510760421424,
+          "duration" : 1625
+        },
+        "status" : "passed",
+        "flaky" : true,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "7b6239ab9487212d",
+        "name" : "checkH1AndTitle",
+        "time" : {
+          "start" : 1510760421435,
+          "stop" : 1510760421495,
+          "duration" : 60
+        },
+        "status" : "passed",
+        "flaky" : true,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "18434118a4a2ddf2",
+        "name" : "checkSearchWithTwoKeysInDifferentOrders",
+        "time" : {
+          "start" : 1510760421504,
+          "stop" : 1510760423632,
+          "duration" : 2128
+        },
+        "status" : "passed",
+        "flaky" : true,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

@@ -1,26 +1,23 @@
 package BaseTest;
 
-import POM.AvmgPage.AvmgBasePage;
-import POM.AvmgPage.AvmgMainPage.AvmgMainPageAbstract;
 import POM.AvmgPage.AvmgMainPage.AvmgMainPageRu;
 import POM.AdminPage.AdminAvmgMainPage;
 import driver.Driver;
+import driverSupport.TestReports;
 import mail.Mails;
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
-
-import java.io.IOException;
 import java.util.HashSet;
-
-import static Screenshot.Screenshot.takeScreenshot;
 import static files.FileAV.deleteAllFilesFromFolder;
 import static files.FileAV.getAllFilesFromFolder;
 
 /**
  * Created by Дмитрий on 03.05.2017.
  */
+@Listeners(TestReports.class)
 public abstract class BaseTest {
+
+    public String browser;
     public AvmgMainPageRu avmgMainPage;
     public AdminAvmgMainPage adminAvmgMainPage;
     public String loginGm = "avmg5040@gmail.com";
@@ -30,18 +27,18 @@ public abstract class BaseTest {
     public String folderForScreenshots = "src/main/java/screenshots";
     String testName;
 
-    private WebDriver driver;
-
     @BeforeClass
     @Parameters({"browser"})
     public void setUp(@Optional("chrome") String browser){
+        this.browser = browser;
         deleteAllFilesFromFolder(folderForScreenshots);
         avmgMainPage = new AvmgMainPageRu(browser);
         Driver.maximize();
     }
 
     @AfterClass
-    public void tearDown() {
+    public void tearDown(ITestContext testContext) {
+        testName = testContext.getName() + " " + browser;
         Driver.tearDown();
         Driver.nullDriver();
         try {
@@ -56,11 +53,5 @@ public abstract class BaseTest {
         }
     }
 
-    @AfterMethod
-    public void takeSkreenshots(ITestResult result) throws IOException {
-        testName = result.getInstanceName();
-        if (ITestResult.FAILURE == result.getStatus()){
-            takeScreenshot(result.getName());
-        }
-    }
+
 }

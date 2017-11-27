@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="registAndAutifSuite"  >
+
+    <test name="TestAutentificationRu" allow-return-values="true">
+        <parameter name = "browser" value="opera" />
+        <parameter name = "language" value="ru"/>
+        <classes>
+            <class name = "checkAutentification"/>
+        </classes>
+    </test>
+
+    <test name="TestAutentificationUa" allow-return-values="true">
+        <parameter name = "browser" value="opera" />
+        <parameter name = "language" value="ua"/>
+        <classes>
+            <class name = "checkAutentification"/>
+        </classes>
+    </test>
+
+    <test name="TestAutentificationEn" allow-return-values="true">
+        <parameter name = "browser" value="opera" />
+        <parameter name = "language" value="en"/>
+        <classes>
+            <class name = "checkAutentification"/>
+        </classes>
+    </test>
+
+</suite>

@@ -2,153 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d492856-05f5-4169-a82c-f0717eba0041" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/driverSupport/TestReports.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/driverSupport/WebDriverExtensions.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/0114fbc9-5067-471f-bb27-98f86df3c103-container.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/49bf60f1-f48d-4a48-b997-c6c795c85ac3-result.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/6a8d6d25-c36c-43f3-8dca-da370f10cae3-container.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/b8c336bd-42d6-4951-acc8-31cab4eb447b-container.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/b94952e7-9cbe-4d48-a9fb-ea17d394a647-result.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/allure-results/f29421e7-60f1-4b1b-a7b1-1b89b9e1c2dd-container.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AdminBasePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AdminPage/AdminAvmgMainPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AdminPage/AdminAvmgResultsFormPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AdminPage/AdminAvmgSettingsFormPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AdminPage/UsersListPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgBasePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgContactPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgCuttingBandSawPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgGasCuttingMetalPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMainPage/AvmgMainPageAbstract.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMainPage/AvmgMainPageEn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMainPage/AvmgMainPageRu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMainPage/AvmgMainPageUa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMetalwarehouses/AvmgMetalwarehousesAbstract.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMetalwarehouses/AvmgMetalwarehousesPageRu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMetalwarehouses/AvmgMetalwarehousesPageUa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgMetalwarehousesRegionPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgPlasmaCuttingMetalPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgSearchPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/AvmgServicesPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/AvmgPage/Header.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/POM/BasePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Retry/Retry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Retry/RetryListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Retry/TestListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Screenshot/Screenshot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/driver/Driver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/drivers/geckodriver32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/files/FileAV.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/logger/WebEventListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/Mails$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/Mails$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/Mails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/CareerAvmg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/FunctionBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/PartnersAvmg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/RequestAvmg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/models/UserAvmg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/selector/selectors$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/selector/selectors.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/testng1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/testng1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestCareerRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestCareerRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestCareerUa.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestCareerUa.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestContactRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestContactRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestDostavkaRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestDostavkaRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestGazovayaRezkaMetallaRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestGazovayaRezkaMetallaRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestMainRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestMainRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestPartnersavmgRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestPartnersavmgRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestPlazmennayaRezkaMetallaRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestPlazmennayaRezkaMetallaRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestProdolnayaRezkaMetallaRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestProdolnayaRezkaMetallaRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestRezkaNaLentopilnomStankeRu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestRezkaNaLentopilnomStankeRu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/checkForms/ChromeTestSearchRu4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-checkLinks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-checkMetalwarehouses.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/ChromeTestCareerRu.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkForms/toc.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver.exe" afterPath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/drivers/operadriver.exe" afterPath="$PROJECT_DIR$/src/main/resources/drivers/operadriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/drivers/geckodriver.exe" afterPath="$PROJECT_DIR$/target/classes/drivers/geckodriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/drivers/operadriver.exe" afterPath="$PROJECT_DIR$/target/classes/drivers/operadriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest/BaseTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkAutentification.class" afterPath="$PROJECT_DIR$/target/test-classes/checkAutentification.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormBase.class" afterPath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormCareer.class" afterPath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormCareer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormPartners.class" afterPath="$PROJECT_DIR$/target/test-classes/checkForm/checkFormPartners.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkMetalwarehouses/checkMetalwarehousesRu.class" afterPath="$PROJECT_DIR$/target/test-classes/checkMetalwarehouses/checkMetalwarehousesRu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkMetalwarehouses/checkMetalwarehousesUa.class" afterPath="$PROJECT_DIR$/target/test-classes/checkMetalwarehouses/checkMetalwarehousesUa.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkRegistration.class" afterPath="$PROJECT_DIR$/target/test-classes/checkRegistration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/checkSearch/checkSearch.class" afterPath="$PROJECT_DIR$/target/test-classes/checkSearch/checkSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVMetall.iml" afterPath="$PROJECT_DIR$/AVMetall.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgResultsFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgResultsFormPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgSettingsFormPage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgSettingsFormPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgBasePage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgBasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMainPage/AvmgMainPageEn.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMainPage/AvmgMainPageEn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMainPage/AvmgMainPageRu.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMainPage/AvmgMainPageRu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMetalwarehouses/AvmgMetalwarehousesAbstract.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMetalwarehouses/AvmgMetalwarehousesAbstract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMetalwarehousesRegionPage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgMetalwarehousesRegionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgSearchPage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgSearchPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/POM/BasePage.java" afterPath="$PROJECT_DIR$/src/main/java/POM/BasePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/driver/Driver.java" afterPath="$PROJECT_DIR$/src/main/java/driver/Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/suites/formsSuite.xml" afterPath="$PROJECT_DIR$/src/main/resources/suites/formsSuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkAutentification.java" afterPath="$PROJECT_DIR$/src/test/java/checkAutentification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkForm/checkFormBase.java" afterPath="$PROJECT_DIR$/src/test/java/checkForm/checkFormBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkForm/checkFormCareer.java" afterPath="$PROJECT_DIR$/src/test/java/checkForm/checkFormCareer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkForm/checkFormPartners.java" afterPath="$PROJECT_DIR$/src/test/java/checkForm/checkFormPartners.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesRu.java" afterPath="$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesRu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesUa.java" afterPath="$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesUa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkRegistration.java" afterPath="$PROJECT_DIR$/src/test/java/checkRegistration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/checkSearch/checkSearch.java" afterPath="$PROJECT_DIR$/src/test/java/checkSearch/checkSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/suites/formsSuite.xml" afterPath="$PROJECT_DIR$/target/classes/suites/formsSuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testng.xml" afterPath="$PROJECT_DIR$/target/classes/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -165,33 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkMetalwarehousesRu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesRu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="checkFormPartners.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/checkForm/checkFormPartners.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkRegistration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/checkRegistration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -220,18 +53,48 @@
       <file leaf-file-name="TestReports.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/driverSupport/TestReports.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
+            <state relative-caret-position="119">
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminAvmgSettingsFormPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminAvmgSettingsFormPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgSettingsFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="544">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchSuite.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/suites/searchSuite.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkSearch.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/checkSearch/checkSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-821">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -240,18 +103,8 @@
       <file leaf-file-name="WebDriverExtensions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/driverSupport/WebDriverExtensions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
+            <state relative-caret-position="867">
               <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkAllLinks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/checkLinks/checkAllLinks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -501,8 +354,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -629,15 +481,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaseTest" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -660,6 +508,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -969,7 +821,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1439,18 +1292,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Дмитрий_Documents_AQA_AVMetallAQA_src_main_resources_suites_searchSuite_xml - 2017.11.09 at 17h 41m 38s.xml">
-      <configuration name="C:/Users/Дмитрий/Documents/AQA/AVMetallAQA/src/main/resources/suites/searchSuite.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.10.31 at 16h 37m 12s.xml">
-      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.10.31 at 16h 39m 59s.xml">
-      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.10.31 at 16h 49m 53s.xml">
-      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.01 at 10h 40m 19s.xml">
       <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -1469,26 +1310,38 @@
     <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.09 at 17h 51m 19s.xml">
       <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.27 at 17h 44m 46s.xml">
+      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.27 at 17h 46m 04s.xml">
+      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.27 at 17h 51m 52s.xml">
+      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Дмитрий_IdeaProjects_AVMetall_src_main_resources_testng_xml - 2017.11.27 at 17h 53m 24s.xml">
+      <configuration name="C:/Users/Дмитрий/IdeaProjects/AVMetall/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4936034" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.20202559" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.20522387" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22441365" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28710726" sideWeight="0.7979744" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.79477614" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3523454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35607675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1499,7 +1352,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4936034" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1705,32 +1557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/searchSuite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/checkSearch/checkSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="95" column="34" lean-forward="false" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/POM/AvmgPage/AvmgSearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1760,7 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="184" column="25" lean-forward="false" selection-start-line="184" selection-start-column="25" selection-end-line="184" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1776,7 +1605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1784,7 +1612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1792,7 +1619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1800,7 +1626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1808,7 +1633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="132" column="8" lean-forward="false" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1822,7 +1646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/checkMetalwarehouses/checkMetalwarehousesRu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="102">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1864,7 +1688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/driverSupport/WebDriverExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
+        <state relative-caret-position="867">
           <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding />
         </state>
@@ -1880,7 +1704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/driverSupport/TestReports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
+        <state relative-caret-position="119">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
@@ -1888,8 +1712,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/POM/AdminPage/AdminAvmgSettingsFormPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="544">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/searchSuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/checkSearch/checkSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-821">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>

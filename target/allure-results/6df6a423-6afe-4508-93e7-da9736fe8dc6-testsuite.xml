@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1511797960712" stop="1511797999475" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>SuiteSearch : ChromeTestSearchRu1[key1=ddddddddddd, key2=АВ, correctness=false, browser=chrome, language=ua]</name>
+    <title>SuiteSearch : ChromeTestSearchRu1[key1=ddddddddddd, key2=АВ, correctness=false, browser=chrome, language=ua]</title>
+    <test-cases>
+        <test-case start="1511797982280" stop="1511797989934" status="passed">
+            <name>checkResultList[false,ddddddddddd]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="SuiteSearch"/>
+                <label name="testGroup" value="ChromeTestSearchRu1"/>
+                <label name="testClass" value="checkSearch.checkSearch"/>
+                <label name="testMethod" value="checkResultList"/>
+                <label name="host" value="DESKTOP-ACURQ7O"/>
+                <label name="thread" value="1976@DESKTOP-ACURQ7O.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1511797989942" stop="1511797996716" status="passed">
+            <name>checkResultPage[false,ddddddddddd]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="SuiteSearch"/>
+                <label name="testGroup" value="ChromeTestSearchRu1"/>
+                <label name="testClass" value="checkSearch.checkSearch"/>
+                <label name="testMethod" value="checkResultPage"/>
+                <label name="host" value="DESKTOP-ACURQ7O"/>
+                <label name="thread" value="1976@DESKTOP-ACURQ7O.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1511797996720" stop="1511797996805" status="passed">
+            <name>checkH1AndTitle[ua]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="SuiteSearch"/>
+                <label name="testGroup" value="ChromeTestSearchRu1"/>
+                <label name="testClass" value="checkSearch.checkSearch"/>
+                <label name="testMethod" value="checkH1AndTitle"/>
+                <label name="host" value="DESKTOP-ACURQ7O"/>
+                <label name="thread" value="1976@DESKTOP-ACURQ7O.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1511797996808" stop="1511797996810" status="passed">
+            <name>checkSearchWithTwoKeysInDifferentOrders[false,ddddddddddd,АВ]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="SuiteSearch"/>
+                <label name="testGroup" value="ChromeTestSearchRu1"/>
+                <label name="testClass" value="checkSearch.checkSearch"/>
+                <label name="testMethod" value="checkSearchWithTwoKeysInDifferentOrders"/>
+                <label name="host" value="DESKTOP-ACURQ7O"/>
+                <label name="thread" value="1976@DESKTOP-ACURQ7O.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
